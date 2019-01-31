@@ -1,8 +1,9 @@
+### Android template
 # Built application files
 *.apk
 *.ap_
 
-# Files for the ART/Dalvik VM
+# Files for the Dalvik VM
 *.dex
 
 # Java class files
@@ -32,34 +33,63 @@ proguard/
 # Android Studio captures folder
 captures/
 
-# IntelliJ
+# Intellij
 *.iml
-.idea/workspace.xml
-.idea/tasks.xml
-.idea/gradle.xml
-.idea/assetWizardSettings.xml
-.idea/dictionaries
-.idea/libraries
-.idea/caches
 
 # Keystore files
-# Uncomment the following line if you do not want to check your keystore files in.
-#*.jks
+*.jks
 
-# External native build folder generated in Android Studio 2.2 and later
-.externalNativeBuild
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+### Windows template
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
 
-# Freeline
-freeline.py
-freeline/
-freeline_project_description.json
+# Folder config file
+Desktop.ini
 
-# fastlane
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots
-fastlane/test_output
-fastlane/readme.md
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+
+### OSX files
+.DS_Store
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.Trashes
+
+
+### Eclipse project files
+.classpath
+.project
+
+### Android Studio
+/.idea/workspace.xml
+/.idea/inspectionProfiles/
+/.idea/libraries/
+/.idea/misc.xml
+/.idea/dictionaries
+/.idea/encodings.xml
+/.idea/vcs.xml
+/.idea/modules.xml
+/.idea/gradle.xml
+/.idea/compiler.xml
+/.idea/runConfigurations.xml
+/.idea/codeStyleSettings.xml
+/.idea/caches/
+/.idea/codeStyles/
+
+# Optional Fields : for older project formats
+/*/out
+/*/*/build
+/*/*/production
+*.iws
+*.ipr
+*~
+*.swp
+
+
+### External Libraries that we dont wanna push to git
