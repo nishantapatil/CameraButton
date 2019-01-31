@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/white</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorPrimaryLight">#B3E5FC</color>
+    <color name="colorAccent">@color/dodger_blue</color>
+    <color name="colorAccentFallback">@color/dodger_blue_50</color>
+    <color name="background">@color/white</color>
+    <color name="textColorPrimary">@color/slate</color>
+    <color name="colorControlNormal">@color/light_blue_grey</color>
+    <color name="colorControlActivated">@color/bluey_grey</color>
+
+    <color name="grey400">#BDBDBD</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="dodger_blue">#34a3fa</color>
+    <color name="dodger_blue_50">#7f34a2f9</color>
+    <color name="slate">#3e435c</color>
+    <color name="light_blue_grey">#b1cce7</color>
+    <color name="light_blue_grey_50">#80b1cce7</color>
+    <color name="bluey_grey">#8fa7b7</color>
+    <color name="duck_egg_blue">#cee5f8</color>
+</resources>

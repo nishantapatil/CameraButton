@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- pressed state -->
+    <item android:state_pressed="true">
+        <inset xmlns:android="http://schemas.android.com/apk/res/android">
+            <shape android:shape="rectangle">
+                <corners android:radius="2dp" />
+                <solid android:color="@color/colorAccentFallback" />
+                <padding android:bottom="4dp" android:left="8dp" android:right="8dp" android:top="4dp" />
+            </shape>
+        </inset>
+    </item>
+
+    <!-- focused state -->
+    <item android:state_focused="true">
+        <inset xmlns:android="http://schemas.android.com/apk/res/android">
+            <shape android:shape="rectangle">
+                <corners android:radius="2dp" />
+                <solid android:color="@color/colorAccent" />
+                <padding android:bottom="4dp" android:left="8dp" android:right="8dp" android:top="4dp" />
+            </shape>
+        </inset>
+    </item>
+
+    <!-- disabled state -->
+
+    <item android:state_enabled="false">
+        <inset xmlns:android="http://schemas.android.com/apk/res/android">
+            <shape android:shape="rectangle">
+                <corners android:radius="2dp" />
+                <solid android:color="@color/grey400" />
+                <padding android:bottom="4dp" android:left="8dp" android:right="8dp" android:top="4dp" />
+            </shape>
+        </inset>
+    </item>
+
+    <!-- normal state -->
+    <item>
+        <inset xmlns:android="http://schemas.android.com/apk/res/android">
+            <shape android:shape="rectangle">
+                <corners android:radius="2dp" />
+                <solid android:color="@color/colorAccent" />
+                <padding android:bottom="4dp" android:left="8dp" android:right="8dp" android:top="4dp" />
+            </shape>
+        </inset>
+    </item>
+</selector>

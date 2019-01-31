@@ -1,0 +1,208 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context="com.nishant.camerabutton.ImageCroppingActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:fitsSystemWindows="true"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/ToolbarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout xmlns:cropimage="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="56dp">
+
+            <com.isseiaoki.simplecropview.CropImageView
+                android:id="@+id/activty_image_cropping_cropImageView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                cropimage:scv_background_color="@color/black"
+                cropimage:scv_crop_mode="fit_image"
+                cropimage:scv_frame_color="@color/white"
+                cropimage:scv_frame_stroke_weight="1dp"
+                cropimage:scv_guide_color="@color/white"
+                cropimage:scv_guide_show_mode="show_always"
+                cropimage:scv_guide_stroke_weight="1dp"
+                cropimage:scv_handle_color="@color/white"
+                cropimage:scv_handle_show_mode="show_always"
+                cropimage:scv_handle_size="8dp"
+                cropimage:scv_min_frame_size="64dp"
+                cropimage:scv_touch_padding="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <ImageButton
+                    android:id="@+id/activty_image_cropping_btn_rotate_left"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_rotate_left_36dp_white" />
+
+                <ImageButton
+                    android:id="@+id/activty_image_cropping_btn_grid"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_grid_white_selector" />
+
+                <ImageButton
+                    android:id="@+id/activty_image_cropping_btn_rotate_right"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_rotate_right_36dp_white" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/activty_image_cropping_tab_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/black"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/activty_image_cropping_tab_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp">
+
+                    <Button
+                        android:id="@+id/activty_image_cropping_btn_free"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/selector_bg_flowlayout_item_border"
+                        android:minWidth="64dp"
+                        android:padding="4dp"
+                        android:text="FREE" />
+
+                    <Button
+                        android:id="@+id/activty_image_cropping_btn_1_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/selector_bg_flowlayout_item_border"
+                        android:minWidth="64dp"
+                        android:padding="4dp"
+                        android:text="1:1" />
+
+                    <Button
+                        android:id="@+id/activty_image_cropping_btn_16_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/selector_bg_flowlayout_item_border"
+                        android:minWidth="64dp"
+                        android:padding="4dp"
+                        android:text="16:9" />
+
+                    <Button
+                        android:id="@+id/activty_image_cropping_btn_4_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/selector_bg_flowlayout_item_border"
+                        android:minWidth="64dp"
+                        android:padding="4dp"
+                        android:text="4:3" />
+
+                    <Button
+                        android:id="@+id/activty_image_cropping_btn_fit_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/selector_bg_flowlayout_item_border"
+                        android:minWidth="64dp"
+                        android:padding="4dp"
+                        android:text="FIT" />
+
+                    <Button
+                        android:id="@+id/activty_image_cropping_btn_circle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/selector_bg_flowlayout_item_border"
+                        android:minWidth="64dp"
+                        android:padding="4dp"
+                        android:text="CIRCLE" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/activty_image_cropping_layout_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#cc212121"
+            android:visibility="gone">
+
+            <ProgressBar
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/loading_drawable" />
+        </FrameLayout>
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

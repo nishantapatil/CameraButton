@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="@style/_AppTheme" />
+
+    <style name="_AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="colorButtonNormal">@color/button_color_state</item>
+        <item name="android:textAppearanceButton">@style/ButtonTextStyle</item>
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="actionBarStyle">@style/ToolbarStyle</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/custom_btn</item>
+        <item name="android:textColor">@color/button_text_state</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Button</item>
+    </style>
+
+    <style name="ButtonTextStyle" parent="TextAppearance.AppCompat.Widget.Button">
+        <item name="android:textColor">@color/button_text_state</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Button</item>
+    </style>
+
+    <style name="ToolbarStyle">
+        <item name="android:background">@drawable/bg_toolbar</item>«
+        <item name="android:elevation" tools:targetApi="lollipop">0dp</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="titleTextColor">@color/textColorPrimary</item>
+        <item name="titleTextAppearance">@style/ToolbarTitleStyle</item>
+    </style>
+
+    <style name="ToolbarTitleStyle">
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>
